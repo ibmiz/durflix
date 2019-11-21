@@ -47,9 +47,7 @@ class Layout extends Component {
 
     /** Get the user input  */
     onSearchHandler = (event) => {
-        this.setState({
-            toggleList: false
-        });
+        this.setState({toggleList: false});
 
         const userInput = event.target.value;
         this.makeApiCall(userInput);
@@ -84,9 +82,7 @@ class Layout extends Component {
         });
     };
 
-    closeModal = () => {
-        this.setState({toggleModal: false});
-    };
+    closeModal = () => {this.setState({toggleModal: false});};
 
     render() {
         const {contentOverview, toggleList, contentList} = this.state;

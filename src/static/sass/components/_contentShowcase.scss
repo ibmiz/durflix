@@ -10,69 +10,62 @@
    &__container { 
       overflow-y: hidden;
       transition: transform 450ms;
-      overflow-x: scroll;
       display: flex;
       width: 95vw;
-      overflow: -moz-scrollbars-none;
-      grid-template-columns: repeat(20, 1fr); // Show first 20 movies
+      grid-template-columns: repeat(20, 1fr);
       column-gap: 0;
-      scrollbar-width: none;
-
-      @include responsive(phone) {
-         width: 98vw;
-      }
 
 
-      &:hover &--genre {
-         opacity: .3;
+      //&:hover &--genre {
+      //   opacity: .3;
+      //
+      //   &:hover {
+      //      transform: scale(1.5);
+      //      opacity: 1;
+      //   }
+      //}
 
-         &:hover {
-            transform: scale(1.5);
-            opacity: 1;
-         }
-      }
+      //&:hover > *  {
+      //   transform: translate3d(-6rem, 0, 0);
+      //
+      //   @include responsive(tab_port) {
+      //      transform: translate3d(-5rem, 0, 0);
+      //   }
+      //
+      //   @include responsive(phone) {
+      //      transform: translate3d(-3rem, 0, 0);
+      //   }
+      //}
 
-      &:hover > *  {
-         transform: translate3d(-6rem, 0, 0); 
-
-         @include responsive(tab_port) {
-            transform: translate3d(-5rem, 0, 0);
-         }
-
-         @include responsive(phone) {
-            transform: translate3d(-3rem, 0, 0);
-         }
-      }
-
-      &--genre:hover ~ &--genre {
-          transform: translate3d(6rem, 0, 0); 
-
-         @include responsive(tab_port) {
-            transform: translate3d(4.5rem, 0, 0);
-         }
-
-         @include responsive(phone) {
-            transform: translate3d(2.8rem, 0, 0);
-         }
-      }
+      //&--genre:hover ~ &--genre {
+      //    transform: translate3d(6rem, 0, 0);
+      //
+      //   @include responsive(tab_port) {
+      //      transform: translate3d(4.5rem, 0, 0);
+      //   }
+      //
+      //   @include responsive(phone) {
+      //      transform: translate3d(2.8rem, 0, 0);
+      //   }
+      //}
 
 
-      &:hover > &--genre__durflix  {
-         transform: translate3d(-1rem, 0, 0); 
-      }
-
-      &--genre__durflix:hover ~ &--genre__durflix {
-          transform: translate3d(1rem, 0, 0); 
-      }
-
-      &:hover &--genre__durflix {
-         opacity: .3;
-
-         &:hover {
-            transform: scale(1.1);
-            opacity: 1;
-         }
-      }
+      //&:hover > &--genre__durflix  {
+      //   transform: translate3d(-1rem, 0, 0);
+      //}
+      //
+      //&--genre__durflix:hover ~ &--genre__durflix {
+      //    transform: translate3d(1rem, 0, 0);
+      //}
+      //
+      //&:hover &--genre__durflix {
+      //   opacity: .3;
+      //
+      //   &:hover {
+      //      transform: scale(1.1);
+      //      opacity: 1;
+      //   }
+      //}
 
       &--genre {
          cursor: pointer;
@@ -129,6 +122,5 @@
 
       }
    }
-   &__container::-webkit-scrollbar { width: 0 !important;}
 }
 

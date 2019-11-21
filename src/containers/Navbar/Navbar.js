@@ -45,15 +45,7 @@ class NavBar extends Component {
                     <div className="navigation__container-link pseudo-link">Recently Added</div>
                     <div className="navigation__container-link pseudo-link">My List</div>
 
-
                     <div className="navigation__container--left">
-                        <SearchLogo className="logo"/>
-
-                        <input
-                            onChange={showMovies}
-                            className="navigation__container--left__input"
-                            type="text"
-                            placeholder="Title, genres, people"/>
 
                     </div>
                     <BellLogo className="navigation__container--bellLogo"/>
