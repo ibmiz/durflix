@@ -23,6 +23,10 @@ class GenreRow extends Component {
                 row: [],
                 genreId: '27'
             },
+            action: {
+                row: [],
+                genreId: '28'
+            },
             romance: {
                 row: [],
                 genreId: '10749'
@@ -151,6 +155,10 @@ class GenreRow extends Component {
                     {topRatedRow}
                 </div>
 
+                <h1 className="contentShowcase__heading">Action</h1>
+                <div className="contentShowcase__container">
+                    {genres.action.row}
+                </div>
 
                 <h1 className="contentShowcase__heading">Comedy</h1>
                 <div className="contentShowcase__container">

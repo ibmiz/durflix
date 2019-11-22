@@ -7,6 +7,8 @@
       padding-top: 2rem;
    }
 
+   &__container::-webkit-scrollbar { width: 0 !important;}
+
    &__container { 
       overflow-y: hidden;
       transition: transform 450ms;
@@ -14,6 +16,7 @@
       width: 95vw;
       grid-template-columns: repeat(20, 1fr);
       column-gap: 0;
+      scrollbar-width: none;
 
 
       //&:hover &--genre {
