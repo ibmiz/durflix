@@ -19,56 +19,41 @@
       scrollbar-width: none;
 
 
-      //&:hover &--genre {
-      //   opacity: .3;
-      //
-      //   &:hover {
-      //      transform: scale(1.5);
-      //      opacity: 1;
-      //   }
-      //}
+      &:hover &--genre {
+         opacity: .3;
 
-      //&:hover > *  {
-      //   transform: translate3d(-6rem, 0, 0);
-      //
-      //   @include responsive(tab_port) {
-      //      transform: translate3d(-5rem, 0, 0);
-      //   }
-      //
-      //   @include responsive(phone) {
-      //      transform: translate3d(-3rem, 0, 0);
-      //   }
-      //}
+         &:hover {
+            transform: scale(1.5);
+            opacity: 1;
+         }
+      }
 
-      //&--genre:hover ~ &--genre {
-      //    transform: translate3d(6rem, 0, 0);
-      //
-      //   @include responsive(tab_port) {
-      //      transform: translate3d(4.5rem, 0, 0);
-      //   }
-      //
-      //   @include responsive(phone) {
-      //      transform: translate3d(2.8rem, 0, 0);
-      //   }
-      //}
+      &:hover > *  {
+         transform: translate3d(-6rem, 0, 0);
+      }
+
+      &--genre:hover ~ &--genre {
+          transform: translate3d(6rem, 0, 0);
+
+      }
 
 
-      //&:hover > &--genre__durflix  {
-      //   transform: translate3d(-1rem, 0, 0);
-      //}
-      //
-      //&--genre__durflix:hover ~ &--genre__durflix {
-      //    transform: translate3d(1rem, 0, 0);
-      //}
-      //
-      //&:hover &--genre__durflix {
-      //   opacity: .3;
-      //
-      //   &:hover {
-      //      transform: scale(1.1);
-      //      opacity: 1;
-      //   }
-      //}
+      &:hover > &--genre__durflix  {
+         transform: translate3d(-1rem, 0, 0);
+      }
+
+      &--genre__durflix:hover ~ &--genre__durflix {
+          transform: translate3d(1rem, 0, 0);
+      }
+
+      &:hover &--genre__durflix {
+         opacity: .3;
+
+         &:hover {
+            transform: scale(1.1);
+            opacity: 1;
+         }
+      }
 
       &--genre {
          cursor: pointer;
@@ -79,14 +64,6 @@
          height: 21.5rem;
          min-height: 0;
 
-         @include responsive(tab_port) {
-            height: 18.5rem;
-         }
-
-         @include responsive(phone) {
-            height: 14rem;
-         }
-        
          &:not(:last-child) {
             padding-right: .5rem;
          }
@@ -114,13 +91,6 @@
             cursor: pointer;
             transition: all 450ms;
             transform: center left;
-
-            @include responsive(tab_port) {
-               height: 42rem;
-            }
-            @include responsive(phone) {
-               height: 34rem;
-            }
          }
 
       }
