@@ -135,7 +135,7 @@ class GenreRow extends Component {
             trendingRow, durlixOriginalsRow, topRatedRow, contentOverview, toggleModal, genres
         } = this.state;
         return (
-            <div className="contentShowcase" style={{paddingTop: 100}}>
+            <div className="contentShowcase">
                 <h1 className="contentShowcase__heading">DURFLIX ORIGINALS</h1>
                 <div className="contentShowcase__container">
                     {durlixOriginalsRow}
