@@ -1,6 +1,6 @@
 import React from 'react';
  
-const contentRow = (props) => (
+const content = (props) => (
 
    <div className="movie">
          <div onClick={props.details} className="content__column-poster">
@@ -9,4 +9,4 @@ const contentRow = (props) => (
    </div> 
 );
 
-export default contentRow;
+export default content;
