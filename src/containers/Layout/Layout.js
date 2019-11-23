@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import axios from 'axios';
 import Navbar from '../Navbar/Navbar';
 import MainContent from '../Layout/MainContent/MainContent';
-import contentRow from '../../components/Content/Content';
+import Content from '../../components/Content/Content';
 import Modal from '../../components/UI/Modal/Modal';
 import ContentDetails from '../../components/Content/ContentDetails/ContentDetails';
 import {apiKey, baseUrl} from '../../config'
@@ -30,7 +30,7 @@ class Layout extends Component {
                     if (result.poster_path !== null && result.media_type !== 'person') {
                         ImageUrl = 'https://image.tmdb.org/t/p/w500' + result.poster_path;
 
-                        const Component = <contentRow
+                        const Component = <Content
                             details={() => this.selectMovieHandler(result)}
                             key={result.id}
                             image={ImageUrl}
